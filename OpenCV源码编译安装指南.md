@@ -4,8 +4,8 @@
 >- 执行以下下命令，设置环境变量（按需设置即可）：
 >> ```shell
 >> export PATH=/usr/local/cuda/bin:$PATH
->> export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/include/lib:$LD_LIBRARY_PATH
->> export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+>> export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+>> export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 >> ```
 >## 下载OpenCV-2.4.13.zip，并解压安装包
 >> ```shell

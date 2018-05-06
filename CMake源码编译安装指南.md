@@ -2,13 +2,13 @@
 >## 下载解压源码包
 >> ```shell
 >> wget https://cmake.org/files/v2.8/cmake-2.8.8.tar.gz3
->> tar xzvf cmake-2.8.8.tar.gz
+>> sudo tar xzvf cmake-2.8.8.tar.gz -C /usr/local/src/
 >> ```
 >## 编译安装
 >> ```shell
 >> cd cmake-2.8.8  
 >> ./bootstrap
->> gmake
+>> make -j$(nproc)
 >> sudo make install
 >> ```
 >## 适配GCC

@@ -13,7 +13,7 @@ sudo yum install -y gcc gcc-c++ kernel-devel
 
 # 解压缩
 
-`sudo tar jxf gcc-4.9.4.tar.bz2 -C /usr/local/src`
+`sudo tar -xzvf gcc-4.9.4.tar.gz -C /usr/local/src`
 
 - 运行download_prerequisites脚本，这个脚本会自动帮你下载所需要的依赖文件和库
 
