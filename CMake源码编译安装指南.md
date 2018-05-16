@@ -11,6 +11,26 @@
 >> sudo make -j$(nproc)
 >> sudo make install
 >> ```
+>## 软链接设置
+>> 如果以前装过cmake，可能会出现`/usr/bin`底下有cmake的二进制程序，导致版本不对，这时可以进行软链接设置。  
+>> cmake 默认安装在`/usr/local/bin`底下，可以检查一下版本号再进行软链接设置：
+>> ```shell
+>> $ /usr/local/bin/cmake --version  
+>> $ /usr/local/bin/ctest --version 
+>> $ /usr/local/bin/cpack --version 
+>> ```
+>> 接下来进行软链接设置：
+>> ```shell
+>> sudo ln -sf /usr/local/bin/ctest /usr/bin/cmake  
+>> sudo ln -sf /usr/local/bin/ctest /usr/bin/ctest
+>> sudo ln -sf /usr/local/bin/ctest /usr/bin/cpack
+>> ```
+>> 检查一下软链接是否正常设置：
+>> ```shell
+>> $ cmake --version  
+>> $ ctest --version 
+>> $ cpack --version 
+>> ```
 >## 适配GCC
 >>由于`cmake`是默认使用`cc`和`c++`来进行编译的，并不是`gcc`和`g++`。  
 >>`cc`和`c++`其实是在`/usr/bin/`目录下的两个软链接，分别指向`gcc`和`g++`。  
