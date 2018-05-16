@@ -6,9 +6,9 @@
 >> ```
 >## 编译安装
 >> ```shell
->> cd cmake-2.8.8  
->> ./bootstrap
->> make -j$(nproc)
+>> cd /usr/local/src/cmake-2.8.8  
+>> sudo ./bootstrap
+>> sudo make -j$(nproc)
 >> sudo make install
 >> ```
 >## 适配GCC
