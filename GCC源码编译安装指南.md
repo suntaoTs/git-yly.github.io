@@ -50,10 +50,10 @@ $ sudo make install
 将以下几行添加进 .bash_profile 中：
 
 ```shell
-export PATH=/usr/local/gcc-4.9.4/bin:$PATH
-export LD_LIBRARY_PATH=/lib:/lib64:/usr/local/lib:/usr/local/lib64/:$LD_LIBRARY_PATH
-export C_INCLUDE_PATH=/usr/include:/usr/local/include/:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=/usr/include:/usr/local/include/:$CPLUS_INCLUDE_PATH
+export PATH=export PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib:/lib32:/lib64:/usr/lib:/usr/lib32:/usr/lib64:/usr/local/lib:/usr/local/lib32:/usr/local/lib64
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include:/usr/local/include
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include:/usr/local/include
 ```
 
 # 更改软链接
